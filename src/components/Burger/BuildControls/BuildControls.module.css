@@ -8,3 +8,10 @@
     margin: auto;
     padding: 10px 0;
 }
+
+.Line {
+    height: 2px;
+    width: 60%;
+    background-color:#8F5E1E;
+    margin-bottom: 8px;
+}
