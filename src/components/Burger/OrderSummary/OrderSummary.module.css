@@ -1,0 +1,18 @@
+.Capitalize {
+    text-transform: capitalize;
+}
+
+.OrderItem {
+    margin-top: 5px;
+    background-color: rgb(252, 222, 186);
+    width: 50%;
+
+}
+
+.OrderList {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    align-items: center;
+}
