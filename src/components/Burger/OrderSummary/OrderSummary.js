@@ -14,12 +14,13 @@ const OrderSummary = (props) => {
 
   return (
     <Auxiliary>
-      <h3>Your order</h3>
-      <p>A delicious burger with the following ingredients:</p>
+      <h3>Your Order</h3>
+      <p>So far you have:</p>
       <ul className={classes.OrderList}>
         {ingredientSummary}
       </ul>
-      <p>Continue to Checkout?</p>
+      <p>Happy with that?</p>
+      <button className={classes.OrderButton}>Checkout</button>
     </Auxiliary>
   )
 }
