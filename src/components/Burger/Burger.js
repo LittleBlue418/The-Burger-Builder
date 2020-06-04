@@ -4,7 +4,7 @@ import classes from './Burger.module.css';
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient'
 
 const Burger = (props) => {
-  const transformedIngredients = Object.keys(props.ingredients)
+  let transformedIngredients = Object.keys(props.ingredients)
     .map(ingredientName => {
       const amount = props.ingredients[ingredientName]
     // Exacutes a function on each element, maps to new array
@@ -15,8 +15,13 @@ const Burger = (props) => {
         return <BurgerIngredient key={ingredientName + i} type={ingredientName} />
         // use the index to create a unique key
       });
-    });
+    }).reduce((accumulator, currentValue) => {
+      return accumulator.concat(currentValue)
+    }, []);
 
+  if (transformedIngredients.length === 0) {
+    transformedIngredients = <p>Adding ingredients to build your burger!</p>
+  }
 
   return (
     <div className={classes.Burger}>
