@@ -21,8 +21,21 @@
     height: 80%;
 }
 
+.DesktopLogo {
+    height:80%;
+}
+
+@media (min-width: 500px) {
+    .LogoDiv {
+        display: none;
+    }
+}
+
 @media (max-width: 499px) {
     .DesktopOnly {
         display:none;
+    }
+    .DesktopLogo {
+        display: none;
     }
 }
