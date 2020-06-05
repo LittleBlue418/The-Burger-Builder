@@ -20,6 +20,7 @@ const OrderSummary = (props) => {
       <ul className={classes.OrderList}>
         {ingredientSummary}
       </ul>
+      <p><strong>£ {props.price.toFixed(2)}</strong></p>
       <p>Happy with that?</p>
       <Button btnType="Danger" clicked={props.purchaseCancelled}>Go Back</Button>
       <Button btnType="Success" clicked={props.purchaseConfirmed}>Checkout</Button>
