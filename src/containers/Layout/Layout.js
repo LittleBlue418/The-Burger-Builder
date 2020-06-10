@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import classes from './Layouts.module.css';
 
 import Auxiliary from '../../hoc/Auxiliary';
-import Toolbar from '../Navigation/Toolbar/Toolbar';
-import SideDraw from '../Navigation/SideDrawer/SideDrawer';
+import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
+import SideDraw from '../../components/Navigation/SideDrawer/SideDrawer';
 
 class Layout extends Component {
   state = {
